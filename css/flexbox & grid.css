@@ -1,0 +1,147 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGrey: hsl(0, 0%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainSection {
+  display: flex;
+  font-size: 15px;
+  margin: auto;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.firstCard {
+  background-color: var(--orange);
+  padding: 20px 10px;
+}
+
+.firstCard a {
+  text-decoration: none;
+  color: var(--orange);
+  background-color: var(--veryLightGrey);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-family: "Lexend Deca";
+  font-size: 10px;
+}
+
+.secondCard {
+  background-color: var(--darkCyan);
+  padding: 20px 10px;
+}
+
+.secondCard a {
+  text-decoration: none;
+  color: var(--darkCyan);
+  background-color: var(--veryLightGrey);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-family: "Lexend Deca";
+  font-size: 10px;
+}
+
+.thirdCard {
+  background-color: var(--veryDarkCyan);
+  padding: 20px 10px;
+}
+
+.thirdCard a {
+  text-decoration: none;
+  color: var(--veryDarkCyan);
+  background-color: var(--veryLightGrey);
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-family: "Lexend Deca";
+  font-size: 10px;
+}
+
+.firstCard h1,
+.secondCard h1,
+.thirdCard h1 {
+  color: var(--veryLightGrey);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.firstCard p,
+.secondCard p,
+.thirdCard p {
+  color: var(--transparentWhite);
+  padding-bottom: 30px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+/* Grid styling */
+.gridBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.gridSection {
+  display: grid;
+  height: 80vh;
+  margin: auto;
+  width: 50%;
+  gap: 7px;
+  /* grid-template-areas:
+    "a a  b "
+    "a a  b "
+    "c d  d"
+    "c e  e"; */
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.firstGrid {
+  /* grid-area: a; */
+  padding: 2em;
+  background-color: var(--darkCyan);
+  grid-column: 1/6;
+  grid-row: 1/3;
+}
+.secondGrid {
+  /* grid-area: b; */
+  padding: 2em;
+  background-color: var(--orange);
+  grid-column: 6/8;
+  grid-row: 1/3;
+}
+.thirdGrid {
+  /* grid-area: c; */
+  padding: 2em;
+  background-color: var(--veryDarkCyan);
+  grid-column: 1/4;
+  grid-row: 3/5;
+}
+.forthGrid {
+  /* grid-area: d; */
+  padding: 2em;
+  background-color: var(--veryLightGrey);
+  grid-column: 4/8;
+  grid-row: 3/4;
+}
+.fifthGrid {
+  /* grid-area: e; */
+  padding: 2em;
+  background-color: black;
+  color: var(--transparentWhite);
+  grid-column: 4/8;
+  grid-row: 4/5;
+}
