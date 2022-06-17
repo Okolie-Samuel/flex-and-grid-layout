@@ -87,9 +87,10 @@
   line-height: 1.5;
 }
 
-/* Grid styling */
+/* Grid styling on cards */
 .gridBody {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -144,4 +145,47 @@
   color: var(--transparentWhite);
   grid-column: 4/8;
   grid-row: 4/5;
+}
+
+.gridButton {
+  margin-top: -100px;
+  margin-bottom: 100px;
+  padding: 10px 30px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: linear-gradient(
+    to bottom left,
+    #e6f9af,
+    #8bbeb2,
+    #fbfbfb,
+    #ecebe4
+  );
+  cursor: pointer;
+}
+
+.flexButton {
+  text-align: center;
+  margin-left: 45%;
+  margin-top: -500px;
+  margin-bottom: 50px;
+  padding: 10px 30px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: linear-gradient(
+    to bottom left,
+    #e6f9af,
+    #8bbeb2,
+    #fbfbfb,
+    #ecebe4
+  );
+  cursor: pointer;
+}
+
+.gridButton a,
+.flexButton a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
 }
